@@ -22,7 +22,8 @@ The analysis is based on the following tables:
 
 ![overview_maven](https://github.com/user-attachments/assets/a5551166-144b-40ce-85c1-9b00fe89169d)
 
-
+##Video 
+[watch the video](https://github.com/Miras98/Maven_roaster_BI/blob/1fcab15c1fa928a2b2bcde3878bbf5f2dfed7a15/Maven_project.mp4)
 
 ## 📊 Key Findings  
 
