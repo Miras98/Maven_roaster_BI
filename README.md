@@ -20,7 +20,8 @@ The analysis is based on the following tables:
 
   ## 📸 **Dashboard Preview**  
 
-![MavenRoast_overview](https://github.com/user-attachments/assets/5cd78144-53c8-482a-a46e-5a3ec37757f1)
+![overview_maven](https://github.com/user-attachments/assets/a5551166-144b-40ce-85c1-9b00fe89169d)
+
 
 
 ## 📊 Key Findings  
