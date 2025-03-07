@@ -1,7 +1,8 @@
 # ☕ Maven Roaster Analysis  
 
 ## 📌 Overview  
-The **Maven Roaster Analysis** project examines **sales trends, customer behavior, and product performance** using data from a coffee roastery business.
+The **Maven Roaster Analysis** project performs advanced analysis using DAX to examine
+**sales trends, customer behavior, and product performance** using data from a coffee roastery business.
 By analyzing transactional and inventory data, we uncover key insights that drive business decisions.  
 
 ## 📊 Objectives  
@@ -12,37 +13,79 @@ By analyzing transactional and inventory data, we uncover key insights that driv
 
 ## 🗂 Dataset Description  
 The analysis is based on the following tables:  
-
-- **`customer_lookup`** → Contains customer demographics and segmentation  
-- **`product_lookup`** → Stores product details like category, price, and type  
-- **`food_inventory`** → Tracks inventory levels and stock movements  
 - **`calendar`** → Provides time-based insights on sales trends
+- **`Sales by Store`** → fact table that involves measures such as unit price, quantity sold and orders
+- **`food inventory`** → fact table that tracks inventory levels and stock movements  
+- **`customer lookup`** → Contains customer demographics and segmentation  
+- **`product lookup`** → Stores product details like category, price, and type
+- **`Employee lookup`** → contains employees info. like name, location ,and position
+
 
   ## 📸 **Dashboard Preview**  
 
-![overview_maven](https://github.com/user-attachments/assets/a5551166-144b-40ce-85c1-9b00fe89169d)
+![Maven_overview](https://github.com/user-attachments/assets/ba3043de-8382-41d4-997f-60f71d2e5ac4)
 
-##Video 
-[watch the video](https://github.com/Miras98/Maven_roaster_BI/blob/1fcab15c1fa928a2b2bcde3878bbf5f2dfed7a15/Maven_project.mp4)
-
-## 📊 Key Findings  
+## **Key Findings & Business Recommendations**  
 
 ### **1️⃣ Sales Trends**  
-✅ **Peak Sales Periods**: The highest sales occur during **holiday seasons** and weekends.  
-✅ **Monthly Sales Growth**: Sales exhibit a steady growth trend, with **Q4 showing the highest revenue**.  
-✅ **Regional Performance**: Urban areas generate **higher sales volumes** compared to rural regions.  
+- **Total Sales & Growth**: The total sales amount is **$4.25M**, with the highest Month-over-Month (MoM) growth of **27.91% in April**.  
+  - 📌 **Recommendation:** Leverage marketing efforts around April, analyze reasons for the surge, and replicate successful strategies in other months.  
+
+- **Profit Over Time**: The **highest profit was in 2018** ($1.41M).  
+  - 📌 **Recommendation:** Assess the factors contributing to this peak—pricing, demand, or economic trends. 
+
+- **Sales Contribution by Store & Employee**:  
+  - **Store 8** generated the highest sales percentage (**33.44%**).  
+  - **Top Sales Employees**: **Britanni Jordan, Kylie Candace, and Joelle Christen**.  
+  - 📌 **Recommendation:** Incentivize top performers with commissions or recognition programs. Analyze the strategies of Store 8
+    and apply best practices to lower-performing stores.  
+
+- **Sales on Weekends vs. Weekdays**:  
+  - **71.41% of sales occur on weekdays**, while **28.59% happen on weekends**.  
+  - 📌 **Recommendation:** Introduce **weekend-specific promotions** or special events to boost weekend sales.  
+
+---
 
 ### **2️⃣ Customer Insights**  
-✅ **Top Customer Segments**: The most frequent buyers are **loyal customers aged 30-45**.  
-✅ **Repeat Purchase Behavior**: **45% of customers return** within 3 months for repeat purchases.  
-✅ **Customer Retention Challenge**: 30% of customers make only **one purchase and never return**.  
+- **Customer Segments & Memberships**:  
+  - The most **frequent buyers** are **loyal customers aged 40-50**.  
+  - **Member customers** contribute to **49.02% of total sales**.  
+  - 📌 **Recommendation:** Strengthen **loyalty programs** for this age group and promote **membership benefits** to non-members to increase retention and spending.  
+
+- **Most Profitable Customers**:  
+  - **Summer, Meghan, and Peter** contribute the highest profits.  
+  - 📌 **Recommendation:** Offer them **exclusive deals, personalized promotions**, and VIP perks to **encourage repeat purchases**.  
+
+---
 
 ### **3️⃣ Product Performance**  
-✅ **Top-Selling Products**: Specialty coffee blends and organic beans are the **best sellers**.  
-✅ **Low-Performing Products**: Certain **seasonal flavors** have lower demand and slow-moving inventory.  
-✅ **Profitability**: The highest profit margins come from **premium coffee subscriptions**.  
+- **Best-Selling Products**:  
+  - **Sustainably Grown Organic Lg, Dark Chocolate Lg, and Latte Rg** are the top 3 best-sellers.  
+  - 📌 **Recommendation:** Ensure **stock availability**, optimize **pricing**, and highlight these items in marketing campaigns.  
 
-### **4️⃣ Inventory Management**  
-✅ **Stock Turnover**: High turnover for espresso blends, while **single-origin beans have slow movement**.  
-✅ **Out-of-Stock Issues**: Some best-selling products frequently go out of stock, affecting sales.  
+- **Sales by Product Group per Store**:  
+  - **Beverages** lead in **Store 3 (34.21%)**, **Food** dominates **Store 5 (34.49%)**, and **Whole Bean/Teas** contribute to **42.55% of Store 8’s sales**.  
+  - 📌 **Recommendation:** Tailor **inventory and promotions** based on store-specific demand.  
 
+- **7-Day Rolling Average Profit**:  
+  - **Beverages and Food** show an **upward trend**, indicating **growing demand**.  
+  - **Add-ons and Merchandise** have a **flat trend**, showing **consistent but stagnant demand**.  
+  - 📌 **Recommendation:** Increase focus on **Beverages and Food** through advertising,
+     while testing **new product variations or bundling strategies** for Add-ons and Merchandise.  
+
+---
+
+### **4️⃣ Food Inventory Management**  
+- **Unsold Food & Lost Revenue**:  
+  - **Store 3** had the highest **unsold food inventory ($169,934)**.  
+  - **Scone and Oatmeal Scone** products contribute the most to lost revenue.  
+  - 📌 **Recommendation:** Improve **demand forecasting**, adjust **ordering strategies**,
+    and introduce **discounts or promotions** for perishable food items close to expiration.  
+
+---
+
+## **Final Business Recommendations**
+✅ Optimize marketing strategies based on **seasonal and product demand trends**.  
+✅ Strengthen **loyalty programs and membership incentives** to **increase repeat purchases**.  
+✅ Reduce food waste by **enhancing inventory planning and promotional pricing**.  
+✅ Scale **best practices** from high-performing stores and employees to **improve sales in weaker areas**.  
